@@ -1,0 +1,20 @@
+Part 2: Scenario-Based Questions
+1.Application Performance Issues
+    - Approach:
+    1. Identify the Issue: Use performance monitoring tools to analyze load times and resource usage.
+    2. Replicate the Issue: Simulate multiple users to observe performance.
+    3. Analyze: Check server logs, network latency, and application bottlenecks.
+    4. Report: Document findings, including performance metrics, and suggest optimizations. Provide a detailed report on what was found and recommendations for improvement.
+
+2.Requirement Changes
+    - Approach:
+    1. Review New Requirements: Understand the changes and their impact on the existing functionality.
+    2. Update Test Cases: Modify or add test cases to cover the new functionality or changes.
+    3. Re-Test: Execute the updated test cases to ensure the changes work as expected and verify no new issues are introduced. Update documentation as necessary.
+
+3.Cross-Browser Testing
+    - Approach:
+    1. Identify Browsers: List the browsers and versions to be tested.
+    2. Set Up Testing Environment: Configure environments for each browser.
+    3. Execute Tests: Run test cases across different browsers and document any inconsistencies.
+    4. Report Challenges: Note issues such as layout differences, functionality problems, or browser-specific bugs. Provide detailed feedback on the challenges faced and any potential solutions.
