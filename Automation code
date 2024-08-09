@@ -1,0 +1,34 @@
+package practical_Assignment;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Test_Execution_Automation_eg {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver", "Path of thr driver file");
+		WebDriver d = new ChromeDriver();
+		d.get("https://dev.smartodr.in/login");
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		//Locator of Username field
+		d.findElement(By.id("email")).sendKeys("Enter Valid Email ID");
+		//Locator of Password field
+		d.findElement(By.id("password")).sendKeys("Enter Valid Password");
+		//Locator of Login Button
+		d.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div[1]/form/button")).click();
+		
+		// Wait for successful login (example: check for a logout button or welcome message)
+        WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Logout")));
+        System.out.println("Login successful");
+        
+        
+	}
+
+}
