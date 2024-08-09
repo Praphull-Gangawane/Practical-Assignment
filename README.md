@@ -20,5 +20,6 @@ For Java Code
 For Python file
 - Download the Assignment.py file and store it in a folder
 - Open the VS and open the Folder
-- Open the file and Required details
+- Open the VS Code terminal and add the given command (i.e pip install selenium) to install the selenium
+- Open the file and add Required details
 - Click on Run Button.
